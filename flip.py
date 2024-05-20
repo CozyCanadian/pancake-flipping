@@ -19,7 +19,7 @@ for currSize in range(arrayLength, 1, -1):
                 end -= 1
             flipCount += 1
 
-            print(*arr[:currSize], "|", *arr[currSize:])
+            print(*arr[:currSize], "|", *arr[currSize:]) #first flip to get largest in list
         start = 0
         end = currSize - 1
         while start < end:
@@ -28,7 +28,7 @@ for currSize in range(arrayLength, 1, -1):
             end -= 1
         flipCount += 1
 
-        print(*arr[:currSize], "|", *arr[currSize:])
+        print(*arr[:currSize], "|", *arr[currSize:]) #second flip to position largest number in correct order
 
 
 print("Sorted array:", arr)
